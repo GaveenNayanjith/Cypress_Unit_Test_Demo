@@ -30,7 +30,7 @@ describe('<Stepper />', () => {
   }) 
 
   //Clicking the decrement counter and checking whether the counter is raised.
-  it('Counter increased by 1',()=>{
+  it('Counter decreased by 1',()=>{
     cy.mount(<Stepper/>)
     cy.get('[data-cy=decrement]').click()
     cy.get('[data-cy=counter]').should('have.text','-1')
